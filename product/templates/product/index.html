@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+</head>
+<body>
+<h1 style="background-color: aliceblue;text-align: center">Welcome to online shopping🛒</h1>
+<ul>
+    <div>
+        {% for product in products %}
+            <h3>Name: <a href="{% url 'product_detail' product.id  %}">{{ product.name }}</a></h3>
+            <hr>
+        {% endfor %}
+    </div>
+
+</ul>
+</body>
+</html>

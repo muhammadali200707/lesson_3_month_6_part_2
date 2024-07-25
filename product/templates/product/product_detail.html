@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About product:</title>
+</head>
+<body>
+<h1>Welcome to detail page</h1>
+<hr>
+
+Name: {{ product.name }} <br>
+Description: {{ product.description }} <br>
+Price: {{ product.price }} <br>
+Quantity: {{ product.quantity }} <br>
+Published_at: {{ product.published_at }} <br>
+
+
+<h3><a href="{% url 'product_list' %}">Back🔙</a></h3>
+</body>
+</html>
